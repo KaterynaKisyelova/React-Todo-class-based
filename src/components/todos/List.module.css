@@ -1,0 +1,31 @@
+.List {
+  position: relative;
+  border-top: 1px solid #e6e6e6;
+}
+.list__toggle_all {
+  width: 1px;
+  height: 1px;
+  border: none;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.list__toggle_all + label {
+  width: 60px;
+  height: 34px;
+  font-size: 0;
+  position: absolute;
+  transform: rotate(90deg) translateY(30%) translateX(-85%);
+
+}
+.list__toggle_all + label:before {
+  content: "❯";
+  font-size: 22px;
+  color: #e6e6e6;
+  padding: 10px 27px;
+}
+
+.list__content {
+  list-style: none;
+}
